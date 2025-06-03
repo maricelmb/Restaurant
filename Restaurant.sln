@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -11,9 +11,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{8F766740-24F9-4FE9-8B74-C207AB4E8EA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.Services.CouponAPI", "Restaurant.Services.CouponAPI\Restaurant.Services.CouponAPI.csproj", "{4B1B60B7-9162-4A6B-97D4-A7B62D639C66}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B1B60B7-9162-4A6B-97D4-A7B62D639C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B1B60B7-9162-4A6B-97D4-A7B62D639C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B1B60B7-9162-4A6B-97D4-A7B62D639C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B1B60B7-9162-4A6B-97D4-A7B62D639C66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4B1B60B7-9162-4A6B-97D4-A7B62D639C66} = {8F766740-24F9-4FE9-8B74-C207AB4E8EA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF599155-C5A7-431B-8BAA-36446E3C617D}
