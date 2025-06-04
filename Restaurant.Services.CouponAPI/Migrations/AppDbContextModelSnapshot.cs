@@ -33,9 +33,8 @@ namespace Restaurant.Services.CouponAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("DiscountAmount")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<double>("DiscountAmount")
+                        .HasColumnType("float");
 
                     b.Property<int>("MinAmount")
                         .HasColumnType("int");

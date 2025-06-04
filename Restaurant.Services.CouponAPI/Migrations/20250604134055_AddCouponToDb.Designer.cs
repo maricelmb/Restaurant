@@ -11,7 +11,7 @@ using Restaurant.Services.CouponAPI.Data;
 namespace Restaurant.Services.CouponAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250604130449_AddCouponToDb")]
+    [Migration("20250604134055_AddCouponToDb")]
     partial class AddCouponToDb
     {
         /// <inheritdoc />
@@ -36,9 +36,8 @@ namespace Restaurant.Services.CouponAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("DiscountAmount")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<double>("DiscountAmount")
+                        .HasColumnType("float");
 
                     b.Property<int>("MinAmount")
                         .HasColumnType("int");
