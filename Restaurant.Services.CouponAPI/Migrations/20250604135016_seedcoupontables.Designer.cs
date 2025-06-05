@@ -12,7 +12,7 @@ namespace Restaurant.Services.CouponAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250604135016_seedcoupontables")]
-    partial class seedcoupontables
+    partial class SeedCouponTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

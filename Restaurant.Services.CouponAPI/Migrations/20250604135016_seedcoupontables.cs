@@ -7,7 +7,7 @@
 namespace Restaurant.Services.CouponAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class seedcoupontables : Migration
+    public partial class SeedCouponTables : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
