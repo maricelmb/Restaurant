@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="JsonConverter.Newtonsoft.Json" Version="0.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Restaurant.Services.CouponAPI\Restaurant.Services.CouponAPI.csproj" />
+  </ItemGroup>
+
 </Project>
