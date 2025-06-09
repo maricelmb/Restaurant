@@ -23,7 +23,7 @@ namespace Restaurant.Web.Service
             {
                 HttpClient client = _httpClientFactory.CreateClient("RestaurantAPI");
                 HttpRequestMessage message = new();
-                message.Headers.Add("Content-Type", "application/json");
+                message.Headers.Add("Accept", "application/json");
                 //token
 
                 message.RequestUri = new Uri(requestDto.Url);
