@@ -1,4 +1,4 @@
-﻿using Restaurant.Services.CouponAPI.Model.Dto;
+﻿
 using Restaurant.Web.Models;
 using CouponDto = Restaurant.Web.Models.CouponDto;
 using ResponseDto = Restaurant.Web.Models.ResponseDto;
