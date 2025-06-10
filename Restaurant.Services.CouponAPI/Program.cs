@@ -22,12 +22,20 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+//Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+app.UseSwaggerUI();
 }
+
+//show swagger even in production
+//app.UseSwagger();
+//app.UseSwaggerUI(options =>
+//{
+//    options.SwaggerEndpoint("/swagger/v1/swagger.json", "api/coupon");
+//    options.RoutePrefix = string.Empty;
+//});
 
 app.UseHttpsRedirection();
 
