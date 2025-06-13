@@ -1,4 +1,4 @@
-name: Build and deploy .NET Core application to Web App RestaurantCouponAPI
+name: RestaurantCouponAPI - Build and deploy .NET Core application
 on:
   push:
     branches:
