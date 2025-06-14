@@ -54,5 +54,18 @@ namespace Restaurant.Web.Controllers
 
             return NotFound();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> CouponDelete(CouponDto model)
+        {
+            ResponseDto? response = await couponService.DeleteCouponsAsync(model.CouponId);
+
+            if (response != null && response.IsSuccess == true)
+            {
+                return RedirectToAction(nameof(CouponIndex));
+            }
+
+            return View(model);
+        }
     }
 }
