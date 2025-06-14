@@ -25,5 +25,34 @@ namespace Restaurant.Web.Controllers
         { 
             return View();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> CouponCreate(CouponDto model)
+        {
+            if (ModelState.IsValid)
+            {
+                ResponseDto? response = await couponService.CreateCouponsAsync(model);
+
+                if (response != null && response.IsSuccess == true)
+                {
+                    return RedirectToAction(nameof(CouponIndex));
+                }
+            }
+
+            return View(model);
+        }
+
+        public async Task<IActionResult> CouponDelete(int couponId)
+        {
+            ResponseDto? response = await couponService.GetCouponByIdAsync(couponId);
+
+            if (response != null && response.IsSuccess == true)
+            {
+                CouponDto? model = JsonConvert.DeserializeObject<CouponDto>(Convert.ToString(response.Result));
+                return View(model);
+            }
+
+            return NotFound();
+        }
     }
 }

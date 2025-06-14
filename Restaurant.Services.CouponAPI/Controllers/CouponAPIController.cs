@@ -39,7 +39,7 @@ namespace Restaurant.Services.CouponAPI.Controllers
         }
 
         [HttpGet]
-        [Route("id:int")]
+        [Route("{id}")]
         public ResponseDto Get(int id)
         {
             try
