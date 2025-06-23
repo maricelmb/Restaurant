@@ -10,6 +10,11 @@ This uses ASP.Net Core Web API in .Net 9.  This explores how to do Microservices
 - Delete a coupon from the list
 - Delete confirmation of coupon
 
+*Used toastr for notifications: https://github.com/CodeSeven/toastr?tab=readme-ov-file*
+*Used bootswatch theme: https://bootswatch.com/*
+*Used bootstrap navbar: https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works*
+*Used bootstrap icons: https://icons.getbootstrap.com/*
+
 **Project**: Restaurant.Services.CouponAPI (ASP.NET Core Web API, SQL Server, Entity Framework, AutoMapper)
   
 
